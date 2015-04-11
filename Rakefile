@@ -14,6 +14,7 @@ task :install do
     p "YARD not installed."
     p "See https://github.com/skwp/dotfiles for install YADR"
     p ""
+    exit!
   end
 
   Dir.glob(SETTINGS+"/*.vim") do |f|
