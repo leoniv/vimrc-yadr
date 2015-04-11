@@ -11,7 +11,7 @@ task :install do
 
   if ! File.directory?(YADR_SETT)
     p ""
-    P "YARD not installed."
+    p "YARD not installed."
     p "See https://github.com/skwp/dotfiles for install YADR"
     p ""
   end
