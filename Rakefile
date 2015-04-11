@@ -21,6 +21,13 @@ task :install do
     FileUtils.ln_s f,File.join(YADR_SETT,File.basename(f)), :force=>true
   end
 
+  if RUBY_PLATFORM =~ /cygwin/i
+    puts "Is sygwin"
+    `touch ~/.vimrc.before`
+    `echo 'let g:yadr_using_unsolarized_terminal = 1' >> ~/.vimrc.before` if `cat ~/.vimrc.before | grep g:yadr_using_unsolarized_terminal`.strip.length==0
+    `echo 'set t_Co=256' >> ~/.vimrc.before` if `cat ~/.vimrc.before | grep t_Co=256`.strip.length == 0
+  end
+
   p "Install sucssesful. Enjoy :)"
 
 end
