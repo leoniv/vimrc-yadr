@@ -1,6 +1,6 @@
 # vimrc-yadr
 
-This is my customistion vim settings for [YADR](https://github.com/skwp/dotfiles)
+This is my customisation vim settings for [YADR](https://github.com/skwp/dotfiles)
 
 # Dependency
 
