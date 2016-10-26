@@ -64,6 +64,7 @@ nnoremap <A-Right> <C-w>>
 
 set foldmethod=syntax
 set foldlevelstart=1
+set foldnestmax=6
 
 " Space to toggle folds.
 nnoremap <space> za
