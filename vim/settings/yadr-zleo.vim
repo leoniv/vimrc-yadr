@@ -103,3 +103,10 @@ call togglebg#map("<F5>")
 " NERDTree
 nmap <Tab> :NERDTreeToggle <CR>
 
+"************************ Localization ******************************************
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+
+:setlocal spell spelllang=ru_yo,en_us
