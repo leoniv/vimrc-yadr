@@ -103,10 +103,27 @@ call togglebg#map("<F5>")
 " NERDTree
 nmap <Tab> :NERDTreeToggle <CR>
 
-"************************ Localization ******************************************
+"************************ Localization *****************************************
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
-:setlocal spell spelllang=ru_yo,en_us
+"*********************** Spelling **********************************************
+
+"setlocal spell spelllang=ru_yo,en_us
+set wildmenu
+set wcm=<Tab>
+" проверка орфографии:
+menu SetSpell.on  :setlocal spl=ru_yo,en_us spell<CR>
+menu SetSpell.off :setlocal nospell<CR>
+map <F7> :emenu SetSpell.<Tab>
+" выбор альтернатив:
+map <F8> z=<CR>
+map <F5> ]s
+map <S-F5> [s
+map <F9> zG
+map <S-F9> zuG
+
+"********************** asciidoc ***********************************************
+Plugin 'mjakl/vim-asciidoc'
