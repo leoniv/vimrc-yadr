@@ -112,6 +112,8 @@ endif
 set iminsert=0
 set imsearch=0
 
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+
 "*********************** Spelling **********************************************
 
 "setlocal spell spelllang=ru_yo,en_us
